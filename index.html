@@ -14,7 +14,7 @@
     --line: #2a2e33;
     --text: #f2f3f5;
     --muted: #9aa1aa;
-    --accent: #c6ff3d;
+    --accent: #ffd23f;
     --accent-ink: #0e0f11;
     --danger: #ff6b5b;
     --radius: 14px;
@@ -58,7 +58,7 @@
   .opt { background: var(--surface); border: 1.5px solid var(--line); border-radius: var(--radius); padding: 15px 16px; text-align: left; color: var(--text); font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
   .opt small { display: block; color: var(--muted); font-weight: 400; font-size: 13px; margin-top: 2px; }
   .opt .tick { width: 22px; height: 22px; border-radius: 6px; border: 1.5px solid var(--line); flex: none; display: grid; place-items: center; font-size: 14px; }
-  .opt.sel { border-color: var(--accent); background: #1d2410; }
+  .opt.sel { border-color: var(--accent); background: #2a2410; }
   .opt.sel .tick { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
   .opt.sel .tick::after { content: "✓"; font-weight: 800; }
   .opt.single .tick { border-radius: 99px; }
@@ -124,7 +124,7 @@
   .week { display: grid; gap: 6px; margin-top: 12px; }
   .wk { display: grid; grid-template-columns: 44px 1fr; gap: 10px; align-items: baseline; font-size: 14px; padding: 8px 10px; border-radius: 10px; background: var(--surface-2); }
   .wk b { font-size: 13px; color: var(--muted); }
-  .wk.train { background: #1d2410; }
+  .wk.train { background: #2a2410; }
   .wk.train b, .wk.train strong { color: var(--accent); }
   .wk small { color: var(--muted); }
   .card h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 12px 0 6px; }
@@ -140,7 +140,7 @@
   .footer a { color: var(--text); text-decoration: none; font-weight: 700; }
 
   @media print {
-    :root { --bg: #fff; --surface: #fff; --surface-2: #f2f2f2; --line: #ccc; --text: #111; --muted: #555; --accent: #2c5d00; }
+    :root { --bg: #fff; --surface: #fff; --surface-2: #f2f2f2; --line: #ccc; --text: #111; --muted: #555; --accent: #7a5a00; }
     .no-print { display: none !important; }
     .day, .card { break-inside: avoid; }
   }
